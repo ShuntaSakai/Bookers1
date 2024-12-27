@@ -1,5 +1,7 @@
+<div class="success"><%= flash[:notice] %></div>
+<div class="success"><%= flash[:update] %></div>
 <p><b>Title:</b> <%= @book.title %></p>
 
 <p><b>Body:</b> <%= @book.body %></p>
 
-<%= link_to "Edit", edit_book_path(@book.id) %> | <%= link_to "Back", default_path %>
+<span class="link"><%= link_to "Edit", edit_book_path(@book.id) %></span> | <span class="link"><%= link_to "Back", default_path %></span>
